@@ -3,6 +3,12 @@ You should have installed:
 2. Beautiful Soup or Bs4
 3. Requests
 
+Install Python
++---------------------https://www.python.org/downloads/
 
-### **Install Python**
+Install Beauty Soup
++---------------------pip install beautifulsoup4 (https://pypi.org/project/beautifulsoup4/)
++---------------------pip install bs4 (https://pypi.org/project/bs4/)
 
+Install Requests
++---------------------pip install requests (https://pypi.org/project/requests/)
