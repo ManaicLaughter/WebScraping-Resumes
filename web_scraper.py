@@ -54,41 +54,34 @@ for url in urls:
     #Here I have tried exception handling because as you manually go profiles present on the website
     #You will observe that many profile lack certain features.[For eg: Some might not have membershp details while some doesn't have
     #skills detail.] To handle this issue I have added exception code. On finding any profile with certain absent feature. The
-    #algorithm will skip that feature for that particular profile.
+    #algorithm will skip that feature for that particular profile	
     try:
-
         goal = soup1.body.find_all('td', text='Goal: ')
         for td in goal:
         	t = td.find_all_next('td', limit=1)
-        	row = [i.text for i in t]
-    	    	
-    	
+        	row = [i.text for i in t]   	
+		
     except NameError:
     	pass
 
     try:
-
         membership = soup1.body.find_all('td', text='Membership: ')
         for td in membership:
         	t = td.find_all_next('td', limit=1)
         	mem = [i.text for i in t]
-    	    	
-    	
+    	    	   	
     except NameError:
     	pass
     	
     try:
-
         certification = soup1.body.find_all('td', text='Certification: ')
         for td in certification:
         	t = td.find_all_next('td', limit=1)
         	cert = [i.text for i in t]
-    	    	
-    	
+    	    		
     except NameError:
     	pass
 
-    
     single_user.append(count)
     single_user.append(name)
     single_user.append(degree)
