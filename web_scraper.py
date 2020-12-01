@@ -16,7 +16,7 @@ for i in range (1,12):
     for b_tag in soup.find_all("b"):
         a_tag = b_tag.find('a')
         urls.append('https://www.myvisajobs.com'+a_tag.attrs['href'])
-#Since I need data of 100 employees only. I will eliminate data of extra last 4 employees 
+#Since I need data of 100 employees only. I eliminated data of extra last 4 employees. 
 for i in range (0,4):
     urls.pop()
 
