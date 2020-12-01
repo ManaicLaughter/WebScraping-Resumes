@@ -36,7 +36,8 @@ This task seems mammoth at first look, but once done it will be wonderful to pla
 
 
 ### Screenshot
-How the output looked in my sublime editor console after executing the code.
+How the dat output of 100 employees looked in my sublime editor console after executing the code.
 PS: For better veiw refer temp.csv file is present in the repo.
 
+![](sublime_ss.png)
 
